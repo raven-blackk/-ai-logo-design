@@ -1,111 +1,237 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Logo Design</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: #fff;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 50px 0;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
-            background: #00c6ff;
-            color: #fff;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn:hover {
-            background: #0072ff;
-        }
-        .section {
-            margin: 50px 0;
-        }
-        .pricing {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .pricing-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS Makeup & Sheitel Styling</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f5efe6;
+  color: #111;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 15px 30px;
+}
+
+.nav a {
+  color: #c8a45d;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 20px;
+  color: #c8a45d;
+}
+
+.book-btn {
+  border: 1px solid #c8a45d;
+  padding: 8px 16px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+  url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.tagline {
+  color: #c8a45d;
+  letter-spacing: 3px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #000;
+  color: white;
+  padding: 30px;
+}
+
+.card h3 {
+  color: #c8a45d;
+}
+
+/* WHY */
+.why {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.why div {
+  color: #c8a45d;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.phone {
+  font-size: 28px;
+  color: #c8a45d;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #c8a45d;
+  color: black;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #000;
+  color: #c8a45d;
+  padding: 15px;
+}
+</style>
 </head>
+
 <body>
-    <header>AI-Powered Logo Design</header>
-    <div class="container">
-        <h1>Professional, Custom AI-Generated Logos</h1>
-        <p>Get a unique, high-quality logo designed using advanced AI technology.</p>
-        <a href="#order" class="btn">Order Now</a>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">♕ M | S</div>
+  <div>
+    <a href="#">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+    <a class="book-btn" href="sms:3477829165">BOOK NOW</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>MAKEUP &<br>SHEITEL STYLING</h1>
+  <p class="tagline">FLAWLESS. FRESH. TOTALLY YOU.</p>
+
+  <!-- 🔥 Added trust + urgency -->
+  <p style="color:#c8a45d; font-size:18px;">
+    ✨ Trusted for weddings & simchas — limited availability ✨
+  </p>
+
+  <a class="button" href="sms:3477829165">Book Your Appointment</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Makeup Services</h3>
+      <p>✔ Soft glam / natural looks</p>
+      <p>✔ Full glam for simchas</p>
+      <p>✔ Long-lasting smooth finish</p>
+      <p>✔ Lashes available</p>
     </div>
 
-    <div class="section">
-        <h2>Why Choose Us?</h2>
-        <p>✔ AI-assisted, high-resolution logos</p>
-        <p>✔ Multiple variations & revisions</p>
-        <p>✔ Fast turnaround & professional communication</p>
+    <div class="card">
+      <h3>Sheitel Services</h3>
+      <p>✔ Wash & set</p>
+      <p>✔ Waves, curls, straightening</p>
+      <p>✔ Hairline refresh</p>
+      <p>✔ Event-ready styling</p>
     </div>
+  </div>
+</section>
 
-    <div class="section" id="pricing">
-        <h2>Pricing & Packages</h2>
-        <div class="pricing">
-            <div class="pricing-box">
-                <h3>Basic</h3>
-                <p>$20</p>
-                <p>1 AI-generated logo</p>
-                <p>2 revisions</p>
-            </div>
-            <div class="pricing-box">
-                <h3>Standard</h3>
-                <p>$35</p>
-                <p>2 AI-generated logos</p>
-                <p>5 revisions</p>
-            </div>
-            <div class="pricing-box">
-                <h3>Premium</h3>
-                <p>$50</p>
-                <p>3 AI-generated logos</p>
-                <p>Unlimited revisions</p>
-            </div>
-        </div>
-    </div>
+<!-- WHY -->
+<section class="why">
+  <h2>Why Choose MS?</h2>
 
-    <div class="section" id="order">
-        <h2>Place Your Order</h2>
-        <p>Email us at: <strong>contact@ailogos.com</strong> or click below</p>
-        <a href="mailto:contact@ailogos.com" class="btn">Contact Us</a>
-    </div>
+  <div class="why-grid">
+    <div><br>I Drive To You</div>
+    <div><br>Experienced</div>
+    <div><br>Perfect for Simchas</div>
+    <div><br>Custom Looks</div>
+  </div>
+</section>
 
-    <footer>© 2025 AI Logo Design | All Rights Reserved</footer>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About</h2>
+  <p style="text-align:center;">
+    Based in Hollywood, FL. Mobile glam service for weddings, bas mitzvahs, and events.
+    I focus on clean, long-lasting, and beautiful results tailored to you.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Book Your Appointment Now</h2>
+
+  <p>Call or Text</p>
+  <div class="phone">347-782-9165</div>
+
+  <a class="button" href="tel:3477829165">Call</a>
+  <a class="button" href="sms:3477829165">Text</a>
+
+  <br><br>
+
+  <a class="button" href="instagram://user?username=msstudios.fl">
+    Open Instagram
+  </a>
+
+  <a class="button" href="https://www.instagram.com/msstudios.fl/" target="_blank">
+    View Instagram
+  </a>
+</section>
+
+<footer>
+Mazal Tov — I’d love to make you feel beautiful & confident.
+</footer>
+
 </body>
 </html>
